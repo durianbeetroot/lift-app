@@ -1,20 +1,10 @@
-import Footer from "./Footer"
+import Header from './Header';
+import Footer from './Footer';
 
 function About(){
     return (
         <div className="w-[1440px] h-[2548px] bg-white flex-col justify-center items-start inline-flex">
-            <div className="w-[1440px] h-[115px] relative">
-                <div className="w-[1440px] h-[115px] left-0 top-0 absolute bg-neutral-800" />
-                <div className="w-[191px] h-[74px] left-[28px] top-[12px] absolute">
-                <img className="w-[74px] h-[74px] left-0 top-0 absolute" src="https://via.placeholder.com/74x74" />
-                <div className="left-[90px] top-[26px] absolute text-amber-400 text-5xl font-normal">LIFT</div>
-                </div>
-                <div className="left-[449px] top-[46px] absolute text-amber-400 text-2xl font-normal">HOME</div>
-                <div className="left-[1021px] top-[46px] absolute text-white text-2xl font-normal">ABOUT</div>
-                <div className="left-[626px] top-[46px] absolute text-amber-400 text-2xl font-normal">SERVICES</div>
-                <div className="left-[835px] top-[46px] absolute text-amber-400 text-2xl font-normal">PROJECT</div>
-                <div className="w-[84px] h-1 left-[1021px] top-[74px] absolute bg-amber-400" />
-            </div>
+            <Header />
             <div className="w-[1440px] h-[487px] relative">
                 <img className="w-[1440px] h-[487px] left-0 top-0 absolute" src="https://via.placeholder.com/1440x487" />
                 <div className="w-[1440px] h-[487px] left-0 top-0 absolute bg-black bg-opacity-60" />
