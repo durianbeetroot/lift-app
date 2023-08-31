@@ -1,12 +1,15 @@
 import Header from './Header';
 import Footer from './Footer';
 
+import pic1 from './img/home1.jpg';
+
+
 function Home(){
     return (
-        <div className="w-[1440px] h-[2722px] bg-white flex-col justify-center items-start inline-flex">
+        <div className="">
             <Header />
-            <div className="w-[1440px] h-[487px] relative">
-                <img className="w-[1440px] h-[487px] left-0 top-0 absolute" src="https://via.placeholder.com/1440x487" />
+            {/* <div className="w-[1440px] h-[487px] relative">
+                <img className="w-[1440px] h-[487px] left-0 top-0 absolute" src={pic1} />
                 <div className="w-[1440px] h-[487px] left-0 top-0 absolute bg-black bg-opacity-60" />
                 <div className="left-[312px] top-[196px] absolute text-white text-[64px] font-normal">CONSTRUCT YOUR DREAM</div>
                 <div className="w-[234px] h-[68px] left-[610px] top-[337px] absolute bg-zinc-600 bg-opacity-0 border border-white" />
@@ -56,8 +59,8 @@ function Home(){
                 <div className="w-[650px] h-12 left-[52px] top-[556px] absolute text-white text-[40px] font-normal">Duplex Apartment Goodway Street</div>
                 <img className="w-[124px] h-[56.65px] left-[1387.65px] top-[256px] absolute origin-top-left rotate-90" src="https://via.placeholder.com/124x57" />
                 <img className="w-[129.92px] h-[56.65px] left-[45px] top-[383.49px] absolute origin-top-left -rotate-90" src="https://via.placeholder.com/130x57" />
-            </div>
-            <Footer />
+            </div> */}
+            {/* <Footer /> */}
         </div>
     );
 }

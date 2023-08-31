@@ -1,0 +1,18 @@
+.slideDownAnimation {
+    animation-name: slideDown;
+    animation-duration: 10s;
+}   
+
+@keyframes slideDown {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.huahua {
+    background: #000;
+}
