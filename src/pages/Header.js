@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-import anim from './css/animated.css';
 import logo from './img/logo.png';
 
-function Header(){
+function Header(props){
 
     const [navbarState,setNavbarState] = useState(false);
 

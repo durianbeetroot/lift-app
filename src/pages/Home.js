@@ -60,7 +60,7 @@ function Home(){
                 <img className="w-[124px] h-[56.65px] left-[1387.65px] top-[256px] absolute origin-top-left rotate-90" src="https://via.placeholder.com/124x57" />
                 <img className="w-[129.92px] h-[56.65px] left-[45px] top-[383.49px] absolute origin-top-left -rotate-90" src="https://via.placeholder.com/130x57" />
             </div> */}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
