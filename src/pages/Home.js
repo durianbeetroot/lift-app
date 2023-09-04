@@ -8,6 +8,9 @@ function Home(){
     return (
         <div className="">
             <Header />
+            <div className="w-full">
+                <img></img>
+            </div>
             {/* <div className="w-[1440px] h-[487px] relative">
                 <img className="w-[1440px] h-[487px] left-0 top-0 absolute" src={pic1} />
                 <div className="w-[1440px] h-[487px] left-0 top-0 absolute bg-black bg-opacity-60" />
