@@ -11,7 +11,7 @@ import logoWhite from './img/logoWhite.png';
 function Footer(){
     return (
         <div className="bg-neutral-800 w-full">
-            <div className="flex justify-between">
+            <div className="hidden lg:flex justify-between">
                 <div className="flex">
                     <div>
                         <div className="flex items-center py-4 px-2"> 
@@ -40,7 +40,7 @@ function Footer(){
                         <div className="text-white text-xs">EMAIL<br/><br/>SUPPORT@LIFTMAIL.COM</div>
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex mr-12">
                     <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-2">
                         <img className="w-8 h-8 my-2 mx-auto" src={footerX} />
                     </div>
@@ -55,12 +55,56 @@ function Footer(){
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center pt-24 pb-2">
-                <div className=" text-white">COPYRIGHT 2023 - ALL RIGHT RESERVED</div>
+            <div className="lg:hidden md:flex justify-between">
+                <div className="flex">
+                    <div>
+                        <div className="flex items-center py-4 px-2"> 
+                            <img src={logoWhite} alt="logo" className="h-12 w-12 mr-2 ml-2"></img>
+                            <span className="text-white text-3xl">LIFT</span>
+                        </div>
+                    </div>
+                    <div className="py-4">
+                        <a className="block px-4 text-white text-xs py-1">HOME</a>
+                        <a className="block px-4 text-white text-xs py-1">ABOUT</a>
+                        <a className="block px-4 text-white text-xs py-1">SERVICES</a>
+                        <a className="block px-4 text-white text-xs py-1">PROJECTS</a>
+                    </div>
+                </div>
+                <div className="grid-cols-1">
+                    <div className="flex py-3">
+                        <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-4">
+                            <img className="w-6 h-8 mt-2 ml-3" src={footerPhone} />
+                        </div>
+                        <div className="text-white text-xs">PHONE<br/><br/>+1 0123456789</div>
+                    </div>
+                    <div className="flex pb-3">
+                        <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-4">
+                            <img className="w-12 h-12" src={footerEmail} /> 
+                        </div>
+                        <div className="text-white text-xs">EMAIL<br/><br/>SUPPORT@LIFTMAIL.COM</div>
+                    </div>
+                </div>
+                <div className="flex ml-3 mt-3">
+                    <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-2">
+                        <img className="w-8 h-8 my-2 mx-auto" src={footerX} />
+                    </div>
+                    <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-2">
+                        <img className="w-8 h-8 my-2 mx-auto" src={footerIG} />
+                    </div>
+                </div>
+                <div className="flex ml-3 mt-3">
+                    <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-2">
+                        <img className="w-9 h-6 my-3 mx-auto" src={footerMeta} />
+                    </div>
+                    <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-2">
+                        <img className="w-8 h-8 my-2 mx-auto" src={footerTiktok} />
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center pt-12 pb-2">
+                <div className=" text-white text-xs">COPYRIGHT 2023 - ALL RIGHT RESERVED</div>
             </div>
         </div>
-
-
 
         // <div className="w-screen h-[493px] relative">
         //     <div className="w-[1440px] h-[493px] left-0 top-0 absolute bg-neutral-800" />
