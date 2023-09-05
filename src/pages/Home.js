@@ -8,8 +8,62 @@ function Home(){
     return (
         <div className="">
             <Header />
-            <div className="w-full">
-                <img></img>
+            <div className="w-full h-96 relative">
+                <img className="w-full h-96 object-cover absolute" src={pic1} />
+                <div className="w-full h-96 bg-black bg-opacity-60 absolute" />
+                <div className="w-full flex justify-center mt-32 absolute text-white mx-6 text-4xl lg:text-6xl">CONSTRUCT YOUR DREAM</div>
+                <div className="w-full flex justify-center pt-64 relative">
+                    <div className="w-56 h-16 absolute bg-zinc-600 bg-opacity-0 border border-white" />
+                    <div className="w-56 flex justify-center mt-4 absolute text-white text-3xl">SEE MORE</div>
+                </div>
+            </div>
+            <div className="w-full relative">
+                <div className="w-full flex justify-center mt-16">
+                    <div className="w-full h-24 md:h-48 relative">
+                        <div className="w-full flex justify-center text-black text-3xl md:text-5xl">OUR SERVICES</div>
+                        <div className="w-full flex justify-center text-black mx-6 md:text-2xl">We Provided Construction Services Based on the Request of the Client</div>
+                    </div>
+                </div>
+                <div className="w-full sm:columns-1 md:flex md:justify-between">
+                    <div className="w-96 h-40 relative flex justify-center mb-24">
+                        <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
+                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                        </div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                    </div>
+                    <div className="w-96 h-40 relative flex justify-center mb-24">
+                        <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
+                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                        </div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                    </div>
+                    <div className="w-96 h-40 relative flex justify-center mb-24">
+                        <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
+                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                        </div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                    </div>
+                </div>
+                <div className="w-full sm:columns-1 md:flex md:justify-between">
+                    <div className="w-96 h-40 relative flex justify-center mb-24">
+                        <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
+                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                        </div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                    </div>
+                    <div className="w-96 h-40 relative flex justify-center mb-24">
+                        <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
+                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                        </div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                    </div>
+                    <div className="w-96 h-40 relative flex justify-center mb-24">
+                        <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
+                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                        </div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                    </div>
+                </div>
             </div>
             {/* <div className="w-[1440px] h-[487px] relative">
                 <img className="w-[1440px] h-[487px] left-0 top-0 absolute" src={pic1} />

@@ -40,7 +40,7 @@ function Footer(){
                         <div className="text-white text-xs">EMAIL<br/><br/>SUPPORT@LIFTMAIL.COM</div>
                     </div>
                 </div>
-                <div className="flex mr-12">
+                <div className="flex mr-12 pt-3">
                     <div className="w-12 h-12 bg-zinc-700 rounded-[10px] mx-2">
                         <img className="w-8 h-8 my-2 mx-auto" src={footerX} />
                     </div>
