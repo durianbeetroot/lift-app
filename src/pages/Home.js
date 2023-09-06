@@ -3,8 +3,28 @@ import Footer from './Footer';
 
 import pic1 from './img/home1.jpg';
 
+import img1 from './img/img1.jpg';
+import img2 from './img/img2.jpg';
+import img3 from './img/img3.jpg';
+import img4 from './img/img4.jpg';
+
+import React, { useState, useEffect } from 'react';
 
 function Home(){
+
+    const imgList = [img1,img2,img3,img4]
+    const nameList = ['Duplex Apartment Goodway Street','Modern House Betterway Street','Single House Sideway Suburb','Beach House Dockerway Street']
+
+    const [imgSrc,setImgSrc] = useState(imgList[0]);
+    const [nameSrc,setNameSrc] = useState(nameList[0]);
+    const [count, setCount] = useState(0);
+
+    const updateShow = () => {
+        setCount(count==3 ? 0 : count+1)
+        setImgSrc(imgList[count])
+        setNameSrc(nameList[count])
+    }
+
     return (
         <div className="">
             <Header />
@@ -14,7 +34,7 @@ function Home(){
                 <div className="w-full flex justify-center mt-32 absolute text-white mx-6 text-4xl lg:text-6xl">CONSTRUCT YOUR DREAM</div>
                 <div className="w-full flex justify-center pt-64 relative">
                     <div className="w-56 h-16 absolute bg-zinc-600 bg-opacity-0 border border-white" />
-                    <div className="w-56 flex justify-center mt-4 absolute text-white text-3xl">SEE MORE</div>
+                    <div className="w-56 flex justify-center mt-4 absolute text-white text-2xl hover:scale-125 duration-300">SEE MORE</div>
                 </div>
             </div>
             <div className="w-full relative">
@@ -65,6 +85,14 @@ function Home(){
                     </div>
                 </div>
             </div>
+            <div className="w-full h-[36rem] relative">
+                <div className="w-full absolute flex justify-center mt-8 text-white text-5xl">Our Projects</div>
+                <div className="w-full h-[36rem] bg-black bg-opacity-30 absolute" />
+                <button className="w-full h-[36rem] absolute" onClick={updateShow}> </button>
+                <div className="w-full absolute flex justify-center mt-[32rem] text-white text-2xl mx-3">{nameSrc}</div>
+                <img className="w-full h-[36rem] object-cover" src={imgSrc}/>
+            </div>
+            <Footer />
             {/* <div className="w-[1440px] h-[487px] relative">
                 <img className="w-[1440px] h-[487px] left-0 top-0 absolute" src={pic1} />
                 <div className="w-[1440px] h-[487px] left-0 top-0 absolute bg-black bg-opacity-60" />
@@ -117,7 +145,6 @@ function Home(){
                 <img className="w-[124px] h-[56.65px] left-[1387.65px] top-[256px] absolute origin-top-left rotate-90" src="https://via.placeholder.com/124x57" />
                 <img className="w-[129.92px] h-[56.65px] left-[45px] top-[383.49px] absolute origin-top-left -rotate-90" src="https://via.placeholder.com/130x57" />
             </div> */}
-            <Footer />
         </div>
     );
 }

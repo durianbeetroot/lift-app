@@ -10,7 +10,7 @@ import logoWhite from './img/logoWhite.png';
 
 function Footer(){
     return (
-        <div className="bg-neutral-800 w-full">
+        <div className="bg-neutral-800 w-full pt-2">
             <div className="hidden lg:flex justify-between">
                 <div className="flex">
                     <div>
