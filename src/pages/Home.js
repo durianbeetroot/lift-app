@@ -8,6 +8,13 @@ import img2 from './img/img2.jpg';
 import img3 from './img/img3.jpg';
 import img4 from './img/img4.jpg';
 
+import sv_blueprint from './img/sv_blueprint.jpg';
+import sv_materials from './img/sv_materials.jpg';
+import sv_projects from './img/sv_projects.jpg';
+import sv_workers from './img/sv_workers.jpg';
+import sv_safety from './img/sv_safety.jpg';
+import sv_qc from './img/sv_qc.jpg';
+
 import React, { useState } from 'react';
 
 function Home(){
@@ -27,7 +34,7 @@ function Home(){
 
     return (
         <div className="overflow-hidden">
-            <Header />
+            <Header selected="home"/>
             <div className="w-full h-96 relative">
                 <img className="w-full h-96 object-cover absolute" src={pic1} />
                 <div className="w-full h-96 bg-black bg-opacity-60 absolute" />
@@ -41,45 +48,45 @@ function Home(){
                 <div className="w-full flex justify-center mt-16">
                     <div className="w-full h-24 md:h-48 relative">
                         <div className="w-full flex justify-center text-black text-3xl md:text-5xl">OUR SERVICES</div>
-                        <div className="w-full flex justify-center text-black mx-6 md:text-2xl">We Provided Construction Services Based on the Request of the Client</div>
+                        <div className="w-full flex justify-center text-black md:text-2xl">We Provided Construction Services Based on the Request of the Client</div>
                     </div>
                 </div>
-                <div className="w-full sm:columns-1 md:flex md:justify-between">
+                <div className="w-full sm:grid sm:grid-cols-1 place-items-center md:flex md:justify-between">
                     <div className="w-96 h-40 relative flex justify-center mb-24">
                         <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
-                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                            <img className="w-32 h-32 mx-auto mt-4 relative rounded-full" src={sv_blueprint} />
                         </div>
-                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Drafting Blueprint</div>
                     </div>
                     <div className="w-96 h-40 relative flex justify-center mb-24">
                         <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
-                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                            <img className="w-32 h-32 mx-auto mt-4 relative rounded-full" src={sv_materials} />
                         </div>
-                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Provide Materials</div>
                     </div>
                     <div className="w-96 h-40 relative flex justify-center mb-24">
                         <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
-                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                            <img className="w-32 h-32 mx-auto mt-4 relative rounded-full" src={sv_projects} />
                         </div>
-                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Manage Projects</div>
                     </div>
                 </div>
-                <div className="w-full sm:columns-1 md:flex md:justify-between">
+                <div className="w-full sm:grid sm:grid-cols-1 place-items-center md:flex md:justify-between">
                     <div className="w-96 h-40 relative flex justify-center mb-24">
                         <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
-                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                            <img className="w-32 h-32 mx-auto mt-4 relative rounded-full" src={sv_workers} />
                         </div>
-                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Manage Workers</div>
                     </div>
                     <div className="w-96 h-40 relative flex justify-center mb-24">
                         <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
-                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                            <img className="w-32 h-32 mx-auto mt-4 relative rounded-full" src={sv_safety} />
                         </div>
-                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
+                        <div className="flex justify-center text-black mt-48 text-2xl">Oversee Safety</div>
                     </div>
                     <div className="w-96 h-40 relative flex justify-center mb-24">
                         <div className="w-40 h-40 absolute bg-amber-400 rounded-full">
-                            <img className="w-24 h-24 mx-auto mt-8 relative" src="https://via.placeholder.com/104x104" />
+                            <img className="w-32 h-32 mx-auto mt-4 relative rounded-full" src={sv_qc} />
                         </div>
                         <div className="flex justify-center text-black mt-48 text-2xl">Oversee Quality Control</div>
                     </div>

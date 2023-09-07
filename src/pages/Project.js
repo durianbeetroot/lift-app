@@ -11,7 +11,7 @@ import img4 from './img/img4.jpg';
 function Project(){
     return (
         <div className="overflow-hidden">
-            <Header/>
+            <Header selected="project"/>
             <div className="w-full h-96 relative">
                 <img className="w-full h-96 object-cover absolute" src={projects} />
                 <div className="w-full h-96 bg-black bg-opacity-60 absolute" />

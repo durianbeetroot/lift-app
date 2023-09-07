@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import logo from './img/logo.png';
 
-function Header(){
+function Header(props){
 
     const [navbarState,setNavbarState] = useState(false);
 
@@ -20,10 +20,10 @@ function Header(){
                         </div>
                     </div>
                     <div className="hidden md:flex items-center space-x-4 pr-[5vw]">
-                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/">HOME</Link>
-                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/about">ABOUT</Link>
-                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/services">SERVICES</Link>
-                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/project">PROJECTS</Link>
+                        <Link className={`px-10 ${props.selected === 'home' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/">HOME</Link>
+                        <Link className={`px-10 ${props.selected === 'about' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/about">ABOUT</Link>
+                        <Link className={`px-10 ${props.selected === 'services' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/services">SERVICES</Link>
+                        <Link className={`px-10 ${props.selected === 'project' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/project">PROJECTS</Link>
                     </div>
                     <div className="md:hidden flex items-center">
                         <button className="outline-none" onClick={()=> setNavbarState(!navbarState)}>
@@ -43,10 +43,10 @@ function Header(){
                     </div>
                 </div>
                 <div className={`${navbarState ? "block" : "hidden"} py-4`}>
-                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/">HOME</Link>
-                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/about">ABOUT</Link>
-                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/services">SERVICES</Link>
-                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/project">PROJECTS</Link>
+                    <Link className={`block px-4 py-2 ${props.selected === 'home' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/">HOME</Link>
+                    <Link className={`block px-4 py-2 ${props.selected === 'about' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/about">ABOUT</Link>
+                    <Link className={`block px-4 py-2 ${props.selected === 'services' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/services">SERVICES</Link>
+                    <Link className={`block px-4 py-2 ${props.selected === 'project' ? 'text-white' : 'text-amber-400 hover:text-white'} transition duration-300`} to="/project">PROJECTS</Link>
                 </div>
             </div>
         </nav>
