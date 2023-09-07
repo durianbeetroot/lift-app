@@ -1,17 +1,11 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 import logo from './img/logo.png';
 
-function Header(props){
+function Header(){
 
     const [navbarState,setNavbarState] = useState(false);
-
-    // const keyframes =
-    // `@-webkit-keyframes ${animationName} {
-    //     10% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)} 
-    //     90% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)}
-    //     100% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)}
-    // }`;
 
     return(
         <nav className="bg-neutral-800">
@@ -26,10 +20,10 @@ function Header(props){
                         </div>
                     </div>
                     <div className="hidden md:flex items-center space-x-4 pr-[5vw]">
-                        <a className="px-10 text-amber-400 hover:text-white transition duration-300">HOME</a>
-                        <a className="px-10 text-amber-400 hover:text-white transition duration-300">ABOUT</a>
-                        <a className="px-10 text-amber-400 hover:text-white transition duration-300">SERVICES</a>
-                        <a className="px-10 text-amber-400 hover:text-white transition duration-300">PROJECT</a>
+                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/">HOME</Link>
+                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/about">ABOUT</Link>
+                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/services">SERVICES</Link>
+                        <Link className="px-10 text-amber-400 hover:text-white transition duration-300" to="/project">PROJECTS</Link>
                     </div>
                     <div className="md:hidden flex items-center">
                         <button className="outline-none" onClick={()=> setNavbarState(!navbarState)}>
@@ -49,10 +43,10 @@ function Header(props){
                     </div>
                 </div>
                 <div className={`${navbarState ? "block" : "hidden"} py-4`}>
-                    <a className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300">HOME</a>
-                    <a className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300">ABOUT</a>
-                    <a className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300">SERVICES</a>
-                    <a className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300">PROJECTS</a>
+                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/">HOME</Link>
+                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/about">ABOUT</Link>
+                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/services">SERVICES</Link>
+                    <Link className="block px-4 py-2 text-amber-400 hover:text-white transition duration-300" to="/project">PROJECTS</Link>
                 </div>
             </div>
         </nav>

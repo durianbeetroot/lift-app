@@ -8,6 +8,8 @@ import footerTiktok from './img/footerTiktok.png';
 
 import logoWhite from './img/logoWhite.png';
 
+import { Link } from 'react-router-dom';
+
 function Footer(){
     return (
         <div className="bg-neutral-800 w-full pt-2">
@@ -20,10 +22,10 @@ function Footer(){
                         </div>
                     </div>
                     <div className="py-4">
-                        <a className="block px-4 text-white text-xs py-1">HOME</a>
-                        <a className="block px-4 text-white text-xs py-1">ABOUT</a>
-                        <a className="block px-4 text-white text-xs py-1">SERVICES</a>
-                        <a className="block px-4 text-white text-xs py-1">PROJECTS</a>
+                        <Link className="block px-4 text-white text-xs py-1">HOME</Link>
+                        <Link className="block px-4 text-white text-xs py-1">ABOUT</Link>
+                        <Link className="block px-4 text-white text-xs py-1">SERVICES</Link>
+                        <Link className="block px-4 text-white text-xs py-1">PROJECTS</Link>
                     </div>
                 </div>
                 <div className="grid-cols-1">
@@ -64,10 +66,10 @@ function Footer(){
                         </div>
                     </div>
                     <div className="py-4">
-                        <a className="block px-4 text-white text-xs py-1">HOME</a>
-                        <a className="block px-4 text-white text-xs py-1">ABOUT</a>
-                        <a className="block px-4 text-white text-xs py-1">SERVICES</a>
-                        <a className="block px-4 text-white text-xs py-1">PROJECTS</a>
+                        <Link className="block px-4 text-white text-xs py-1">HOME</Link>
+                        <Link className="block px-4 text-white text-xs py-1">ABOUT</Link>
+                        <Link className="block px-4 text-white text-xs py-1">SERVICES</Link>
+                        <Link className="block px-4 text-white text-xs py-1">PROJECTS</Link>
                     </div>
                 </div>
                 <div className="grid-cols-1">

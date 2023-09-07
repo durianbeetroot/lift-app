@@ -8,7 +8,7 @@ import img2 from './img/img2.jpg';
 import img3 from './img/img3.jpg';
 import img4 from './img/img4.jpg';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function Home(){
 
@@ -20,13 +20,13 @@ function Home(){
     const [count, setCount] = useState(0);
 
     const updateShow = () => {
-        setCount(count==3 ? 0 : count+1)
+        setCount(count===3 ? 0 : count+1)
         setImgSrc(imgList[count])
         setNameSrc(nameList[count])
     }
 
     return (
-        <div className="">
+        <div className="overflow-hidden">
             <Header />
             <div className="w-full h-96 relative">
                 <img className="w-full h-96 object-cover absolute" src={pic1} />
@@ -86,8 +86,8 @@ function Home(){
                 </div>
             </div>
             <div className="w-full h-[36rem] relative">
-                <div className="w-full absolute flex justify-center mt-8 text-white text-5xl">Our Projects</div>
                 <div className="w-full h-[36rem] bg-black bg-opacity-30 absolute" />
+                <div className="w-full absolute flex justify-center mt-8 text-white text-5xl">Our Projects</div>
                 <button className="w-full h-[36rem] absolute" onClick={updateShow}> </button>
                 <div className="w-full absolute flex justify-center mt-[32rem] text-white text-2xl mx-3">{nameSrc}</div>
                 <img className="w-full h-[36rem] object-cover" src={imgSrc}/>
