@@ -1,3 +1,3 @@
-**Lift App**
+# Lift App
 
-Website Portfolio of Construction Company built using React, Tailwind and Firebase
+Website Portfolio that simulate Construction Company built using React, Tailwind and Firebase
